@@ -1,0 +1,10 @@
+[
+    {
+        "id": "1",
+        "name": "Chocolate Cake",
+        "category": "Cakes",
+        "description": "Rich, moist chocolate cake",
+        "price": "4500",
+        "availability": "Available"
+    }
+]

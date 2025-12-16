@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Chocolate Éclair",
+        "description": "A delicious choux pastry filled with cream and topped with chocolate icing.",
+        "price": 3.5
+    },
+    {
+        "name": "Strawberry Tart",
+        "description": "A crisp tart filled with custard and fresh strawberries.",
+        "price": 4
+    }
+]
