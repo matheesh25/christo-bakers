@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apilage Bakers</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .table-hover tbody tr:hover { background-color: blue; }
+    .table-bordered td, .table-bordered th { border: 2px solid #000; }
+    .cake-img:hover, .action-btn:hover { transform: scale(1.1); transition: transform 0.3s ease; }
+    .table th, .table td { text-align: center; padding: 15px; }
+  </style>
+</head>
+
+<body style="background: url('cake.jpg') no-repeat center center fixed; background-size: cover;">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Christo Bakers</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="pastry.html">Pastry</a></li>
+        <li class="nav-item"><a class="nav-link" href="cookie.html">Cookies</a></li>
+        <li class="nav-item"><a class="nav-link" href="cake.html">Cake</a></li>
+        <li class="nav-item"><a class="nav-link" href="bun.html">Bun</a></li>
+        <li class="nav-item"><a class="nav-link" href="baverage.html">Beverages</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="container mt-4">
+  <div class="row">
+
+    <div class="col-md-3">
+      <div class="card">
+        <img src="ca1.JPG" class="cake-img card-img-top rounded-circle" style="width: 150px; height: 150px; object-fit: cover; margin: auto;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Chocolate Cake</h5>
+          <button class="btn btn-primary action-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <img src="ca2.JPG" class="cake-img card-img-top rounded-circle" style="width: 150px; height: 150px; object-fit: cover; margin: auto;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Vanilla Sponge Cake</h5>
+          <button class="btn btn-primary action-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <img src="ca3.JPG" class="cake-img card-img-top rounded-circle" style="width: 150px; height: 150px; object-fit: cover; margin: auto;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Red Velvet Cake</h5>
+          <button class="btn btn-primary action-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <img src="ca4.JPG" class="cake-img card-img-top rounded-circle" style="width: 150px; height: 150px; object-fit: cover; margin: auto;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Cheesecake</h5>
+          <button class="btn btn-primary action-btn">Order Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container mt-5">
+  <h2 class="text-warning text-center">Cake Menu</h2>
+  <table class="table table-bordered table-hover">
+  <thead class="table-info">
+      <tr>
+          <th>Item</th>
+          <th>Description</th>
+          <th>Price</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr class="text-white">
+          <td>Chocolate Cake</td>
+          <td>Rich, moist, and loaded with chocolate</td>
+          <td>$15.99</td>
+      </tr>
+      <tr class="text-white">
+          <td>Vanilla Sponge Cake</td>
+          <td>Light, fluffy with real vanilla</td>
+          <td>$14.99</td>
+      </tr>
+      <tr class="text-white">
+          <td>Red Velvet Cake</td>
+          <td>Soft and fluffy with cream cheese frosting</td>
+          <td>$16.99</td>
+      </tr>
+      <tr class="text-white">
+          <td>Cheesecake</td>
+          <td>Made with cream cheese, buttery crust</td>
+          <td>$18.99</td>
+      </tr>
+  </tbody>
+</table>
+</div>
+
+
+<div class="container mt-5">
+  <h2 class="text-warning text-center">Cake List</h2>
+  <table class="table table-bordered table-hover bg-dark">
+    <thead class="table-info">
+      <tr>
+        <th>Name</th>
+        <th>Flavor</th>
+        <th>Price</th>
+        <th>Size</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody id="cakeTableBody" class="text-white">
+    </tbody>
+  </table>
+</div>
+
+<div class="container mt-5">
+  <h2 class="text-warning text-center">Customer Reviews</h2>
+<table class="table table-bordered table-hover">
+  <thead class="table-success">
+      <tr>
+          <th>Name</th>
+          <th>Rating (★)</th>
+          <th>Review</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr class="text-white">
+          <td>Lisa K.</td>
+          <td>★★★★★</td>
+          <td>"The chocolate cake is incredibly rich and delicious!"</td>
+      </tr>
+      <tr class="text-white">
+          <td>Michael J.</td>
+          <td>★★★★☆</td>
+          <td>"Loved the red velvet cake, but it was a little too sweet for me."</td>
+      </tr>
+      <tr class="text-white">
+          <td>Emily T.</td>
+          <td>★★★★★</td>
+          <td>"The cheesecake is the best I've ever had!"</td>
+      </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="text-center mt-4">
+  <button class="btn btn-lg btn-primary action-btn">Order Now</button>
+  <button class="btn btn-lg btn-success action-btn">View Ingredients</button>
+  <button class="btn btn-lg btn-warning action-btn">Read Reviews</button>
+</div>
+
+ <div class="container mt-4
+  mb-4">
+  <div class="container mt-5">
+    <h2 class="text-warning text-center mb-4">Order Your Cake</h2>
+    <form id="orderForm" class="bg-dark p-4 rounded" style="opacity: 0.9;">
+      <div class="form-group">
+        <label class="text-white">Name</label>
+        <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label class="text-white">Flavor</label>
+        <input type="text" name="flavor" class="form-control" placeholder="Flavor (Chocolate, Vanilla etc)" required>
+      </div>
+      <div class="form-group">
+        <label class="text-white">Price ($)</label>
+        <input type="number" name="price" class="form-control" placeholder="Price" required>
+      </div>
+      <div class="form-group">
+        <label class="text-white">Size</label>
+        <select name="size" class="form-control">
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="text-white">Type</label>
+        <input type="text" name="type" class="form-control" placeholder="Type (Cake, Pastry etc)" required>
+      </div>
+      <button type="submit" class="btn btn-success btn-block mt-3">Place Order</button>
+    </form>
+  </div>
+ </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+$(document).ready(function() {
+
+  loadCakes();
+
+  $('#orderForm').submit(function(e){
+    e.preventDefault();
+    
+    $.ajax({
+      url: 'add_cake.php',
+      method: 'POST',
+      data: $(this).serialize(),
+      success: function(response){
+        alert('Cake added successfully!'); 
+        $('#orderForm')[0].reset(); 
+        loadCakes();
+      },
+      error: function(xhr, status, error){
+        alert('Error: ' + error); 
+      }
+    });
+  });
+
+  function loadCakes() {
+    $.ajax({
+      url: 'get_cake.php',
+      method: 'GET',
+      dataType: 'json',
+      success: function(data){
+        var html = '';
+        $.each(data, function(index, cake){
+          html += `
+            <tr>
+              <td>${cake.name}</td>
+              <td>${cake.flavor}</td>
+              <td>$${cake.price}</td>
+              <td>${cake.size}</td>
+              <td>${cake.type}</td>
+            </tr>
+          `;
+        });
+        $('#cakeTableBody').html(html);
+      },
+      error: function(xhr, status, error){
+        alert('Error: ' + error); 
+      }
+    });
+  }
+
+});
+</script>
+
+</body>
+</html>
