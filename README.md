@@ -12,13 +12,13 @@ https://drive.google.com/your-video-link
 
 🛠️ Technologies Used
 
-HTML
-CSS
-Bootstrap
-JavaScript
-jQuery
-AJAX
-JSON
+1.HTML
+2.CSS
+3.Bootstrap
+4.JavaScript
+5.jQuery
+6.AJAX
+7.JSON
 
 🧠 Features
 
